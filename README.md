@@ -1,16 +1,14 @@
-# detailed_login_page
+# sign_in_sign_up_firebase
 
-A new Flutter project.
+## Gerenciamento de Estado: Bloc com gerador de código.
 
-## Getting Started
+ValidatedButton é um bloc global que serve para validar botões por todo o app.
 
-This project is a starting point for a Flutter application.
+Contém uma biblioteca de mascara para os formulários e validadores também.
 
-A few resources to get you started if this is your first Flutter project:
+Widgets customizados.
+## Gerenciamento de Rotas e Injeção de Dependências: Modular.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Persistência de Dados: Secure Storage
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Ao entrar no app, através do Secure Storage juntamente com o bloc, é verificado se tem dados do usuário salvo, se sim, ele vai para a parte logada do app, se não vai para a parte de login...
