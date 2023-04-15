@@ -20,6 +20,9 @@ class Validator {
     if (value == null || value.isEmpty) {
       return 'Enter your full name';
     }
+    if (value.contains('  ')) {
+      return 'Contains more one space';
+    }
     List<String> nameSplited = value.trim().split(" ");
     if (nameSplited.length > 1) {
       if (nameSplited[0].length > 1 && nameSplited[1].length > 1) {

@@ -1,6 +1,7 @@
 import 'package:detailed_login_page/common/blocs/button_valid_bloc/button_valid_bloc.dart';
 import 'package:detailed_login_page/common/utils/validator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
@@ -112,7 +113,10 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               const SizedBox(height: 24.0),
               RTextFormField(
-                inputFormatters: [UpperCaseTextInputFormatter()],
+                inputFormatters: [
+                  UpperCaseTextInputFormatter(),
+                  FilteringTextInputFormatter.allow(RegExp("[ a-zA-Z]")),
+                ],
                 controller: nameController,
                 hintText: 'Enter your full name',
                 validator: (value) {

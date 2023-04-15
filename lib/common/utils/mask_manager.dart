@@ -6,11 +6,9 @@ class MaskManager {
 
   static String cpf = '999.999.999-99';
   static String cnpj = '99.999.999/9999-99';
-  static String phone = '(99) 9 9999-9999';
   static String landline = '(99) 9999-9999';
   static String date = '99/99/9999';
   static String cep = '99999-999';
-
   static String cellPhoneWithDDD = '(99) 9 9999-9999';
 
   static MaskTextInputFormatter maskCellPhoneWithDDD = MaskTextInputFormatter(
